@@ -1,0 +1,536 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'motherland';
+  src: local("motherland.ttf"), url("motherland.ttf"); }
+@font-face {
+  font-family: 'KyrillaSansSerif-Black';
+  src: local("KyrillaSansSerif-Black.ttf"), url("KyrillaSansSerif-Black.ttf"); }
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+body {
+  background-color: #2f2f2e; }
+
+.page-wrapper {
+  max-width: 100%;
+  margin: 0 auto; }
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+h1 {
+  color: #2f2f2e;
+  font-family: 'motherland';
+  font-size: 96px;
+  font-size: 6em;
+  line-height: 1.4em;
+  text-align: center; }
+
+h2 {
+  font-family: 'KyrillaSansSerif-Black';
+  font-size: 32px;
+  font-size: 2em;
+  color: #d1bb94;
+  line-height: 1.4em;
+  text-align: center; }
+
+h3 {
+  font-family: 'KyrillaSansSerif-Black';
+  font-size: 28.8px;
+  font-size: 1.8em;
+  color: #2f2f2e;
+  line-height: 1.4em;
+  padding: 2%;
+  transform: rotate(-18deg); }
+
+p {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-size: 1em;
+  color: #2f2f2e;
+  line-height: 1.4em;
+  padding: 2%;
+  width: 60%;
+  margin-left: 30%; }
+
+li {
+  font-family: sans-serif;
+  line-height: 1.4em;
+  color: #2f2f2e;
+  padding: 2%; }
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+a {
+  font-family: 'KyrillaSansSerif-Black';
+  text-decoration: none;
+  color: #2f2f2e; }
+  a:hover {
+    color: #d1bb94; }
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+header {
+  background: url("lady-min.png");
+  background-size: contain;
+  height: 700px;
+  padding: 10px;
+  margin: 0 auto;
+  background-repeat: no-repeat; }
+  header h1 {
+    position: absolute;
+    top: 20vw;
+    font-size: 8vw;
+    right: 10vw;
+    transform: rotate(-18deg); }
+  header h2 {
+    position: absolute;
+    transform: rotate(-17deg);
+    font-size: 3vw;
+    top: 27vw;
+    right: 9vw; }
+
+/*
+  ========================================
+  Section
+  ========================================
+*/
+.summary {
+  background-color: #d1bb94;
+  margin-top: -350px;
+  border-top: 5px solid #a7403e;
+  border-bottom: 5px solid #a7403e; }
+  .summary a:hover {
+    color: #4b966d; }
+
+.preamble {
+  background-color: #4b966d;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  border-top: 10px solid #2f2f2e; }
+  .preamble p {
+    margin-top: 5px; }
+
+.explanation {
+  background-color: #d1bb94;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-top: 10px solid #2f2f2e; }
+  .explanation p {
+    margin-top: 5px; }
+
+.participation {
+  background-color: #4b966d;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  border-top: 10px solid #2f2f2e; }
+  .participation p {
+    margin-top: 5px; }
+
+.benefits {
+  background-color: #d1bb94;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  border-top: 10px solid #2f2f2e; }
+  .benefits p {
+    margin-top: 5px; }
+
+.requirements {
+  background-color: #4b966d;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  border-top: 10px solid #2f2f2e; }
+  .requirements p {
+    margin-top: 5px; }
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+footer {
+  background-color: #2f2f2e;
+  text-align: center;
+  padding: 3% 0 30px 0;
+  border-top: 10px solid #2f2f2e; }
+  footer a {
+    color: #d1bb94;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'KyrillaSansSerif-Black';
+    padding-bottom: 40px; }
+    footer a:hover, footer a:active {
+      color: transparent;
+      background: url("fist-2.png");
+      background-size: 20px;
+      background-repeat: no-repeat; }
+
+/*
+  ========================================
+  Aside
+  ========================================
+*/
+aside {
+  background-color: #d1bb94;
+  padding-bottom: 30px;
+  padding-top: 10px; }
+  aside ul {
+    margin-top: 15px;
+    width: 60%;
+    margin-left: 30%; }
+  aside a:hover {
+    color: #4b966d; }
+
+@media screen and (min-width: 700px) {
+  header h1 {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    top: 15vw;
+    font-size: 8vw;
+    right: 8vw; }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; }
+    to {
+      margin-left: 0%;
+      width: 47.2%; } }
+  header h2 {
+    animation-duration: 1s;
+    animation-name: slidein-two;
+    font-size: 3vw;
+    top: 23vw;
+    right: 9vw; }
+  @keyframes slidein-two {
+    from {
+      margin-left: 100%;
+      width: 300%; }
+    to {
+      margin-left: 0%;
+      width: 39%; } }
+  .summary {
+    background: url("diag-min.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(-18deg);
+    margin-top: -350px;
+    margin-left: -70px;
+    width: 120%;
+    border-top: 5px solid #d1bb94;
+    border-bottom: 5px solid #d1bb94; }
+    .summary p {
+      border-left: 10px solid #2f2f2e;
+      font-weight: bold;
+      padding-right: 40%; }
+
+  .slidein {
+    -moz-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -moz-animation-name: slidein;
+    -webkit-animation-name: slidein;
+    animation-name: slidein;
+    -moz-animation-iteration-count: 3;
+    -webkit-animation-iteration-count: 3;
+    animation-iteration-count: 3;
+    -moz-animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; }
+
+  @-moz-keyframes slidein {
+    from {
+      margin-left: 0%;
+      width: 300%; }
+    to {
+      margin-left: 100%;
+      width: 100%; } }
+  @-webkit-keyframes slidein {
+    from {
+      margin-left: 0%;
+      width: 300%; }
+    to {
+      margin-left: 100%;
+      width: 100%; } }
+  .preamble {
+    padding-top: 10px;
+    border-top: 5px solid #d1bb94; }
+    .preamble h3 {
+      color: #d1bb94;
+      font-family: 'motherland';
+      font-size: 64px;
+      font-size: 4em; }
+    .preamble p {
+      margin-top: 15px;
+      padding-top: 0;
+      padding-bottom: 0; }
+
+  .explanation {
+    padding-top: 0; }
+    .explanation h3 {
+      color: #4b966d; }
+    .explanation p {
+      margin-top: 15px; }
+
+  .participation {
+    padding-top: 0; }
+    .participation h3 {
+      color: #d1bb94; }
+    .participation p {
+      margin-top: 15px; }
+
+  .benefits {
+    padding-top: 0; }
+    .benefits h3 {
+      color: #4b966d; }
+    .benefits p {
+      margin-top: 15px; }
+
+  .requirements {
+    padding-top: 0; }
+    .requirements h3 {
+      color: #d1bb94; }
+    .requirements p {
+      margin-top: 15px; }
+
+  /*
+    ========================================
+    Footer
+    ========================================
+  */
+  footer {
+    padding: 3% 0 50px 0; }
+    footer a:hover, footer a:active {
+      background-size: 30px; }
+
+  /*
+    ========================================
+    Aside
+    ========================================
+  */
+  aside {
+    padding-top: 10px; }
+    aside h3 {
+      color: #a7403e; }
+    aside ul {
+      margin-top: 35px; } }
+@media screen and (min-width: 1150px) {
+  .slidein {
+    -moz-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -moz-animation-name: slidein;
+    -webkit-animation-name: slidein;
+    animation-name: slidein;
+    -moz-animation-iteration-count: 3;
+    -webkit-animation-iteration-count: 3;
+    animation-iteration-count: 3;
+    -moz-animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; }
+
+  @-moz-keyframes slidein {
+    from {
+      margin-left: 0%;
+      width: 300%; }
+    to {
+      margin-left: 100%;
+      width: 100%; } }
+  @-webkit-keyframes slidein {
+    from {
+      margin-left: 0%;
+      width: 300%; }
+    to {
+      margin-left: 100%;
+      width: 100%; } }
+  /*
+    ========================================
+    Header
+    ========================================
+  */
+  header {
+    height: 800px;
+    margin-left: 35px; }
+    header h1 {
+      animation-duration: 1.5s;
+      animation-name: slidein; }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; }
+    to {
+      margin-left: 0%;
+      width: 47.2%; } }
+    header h2 {
+      animation-duration: 1s;
+      animation-name: slidein-two; }
+  @keyframes slidein-two {
+    from {
+      margin-left: 100%;
+      width: 300%; }
+    to {
+      margin-left: 0%;
+      width: 39%; } }
+  /*
+    ========================================
+    Section
+    ========================================
+  */
+  .summary {
+    margin-top: -150px;
+    margin-left: -80px;
+    width: 115%;
+    font-size: 24px;
+    font-size: 1.5em; }
+
+  .preamble {
+    border-bottom: 5px solid #d1bb94; }
+    .preamble h3 {
+      color: #d1bb94;
+      font-family: 'motherland';
+      position: relative;
+      top: -1vw;
+      left: -1vw;
+      font-size: 64px;
+      font-size: 4em; }
+    .preamble p {
+      padding-top: 0;
+      padding-bottom: 0; }
+
+  .explanation {
+    width: 70%;
+    float: left;
+    background-color: #d1bb94;
+    border-top: none; }
+    .explanation h3 {
+      transform: rotate(0deg); }
+    .explanation p {
+      padding-top: 0;
+      padding-bottom: 0; }
+
+  .participation {
+    width: 70%;
+    float: left;
+    background-color: #4b966d; }
+    .participation h3 {
+      transform: rotate(0deg); }
+    .participation p {
+      padding-top: 0;
+      padding-bottom: 0; }
+
+  .benefits {
+    width: 70%;
+    float: left;
+    background-color: #d1bb94; }
+    .benefits h3 {
+      transform: rotate(0deg); }
+    .benefits p {
+      padding-top: 0;
+      padding-bottom: 0; }
+
+  .requirements {
+    width: 70%;
+    float: left;
+    background-color: #4b966d; }
+    .requirements h3 {
+      transform: rotate(0deg); }
+    .requirements p {
+      padding-top: 0;
+      padding-bottom: 0; }
+
+  /*
+    ========================================
+    Footer
+    ========================================
+  */
+  footer {
+    background: url("diag-min.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    float: left;
+    padding: 3% 0 80px 50px; }
+    footer a {
+      color: #2f2f2e;
+      font-size: 32px;
+      font-size: 2em;
+      margin: 0 30px;
+      padding-bottom: 70px; }
+      footer a:hover, footer a:active {
+        background-size: 50px; }
+
+  /*
+    ========================================
+    Aside
+    ========================================
+  */
+  aside {
+    width: 25%;
+    float: right;
+    background-color: #2f2f2e;
+    margin-top: -120%; }
+    aside h3 {
+      width: 35%; }
+    aside ul, aside h3, aside a, aside li {
+      color: #d1bb94;
+      transform: rotate(0deg);
+      margin-top: 0; }
+    aside a:hover {
+      color: #4b966d; } }
+
+/*# sourceMappingURL=style.css.map */

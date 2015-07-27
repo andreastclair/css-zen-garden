@@ -1,0 +1,262 @@
+@import 'reset';
+@import 'custom';
+@font-face {
+	font-family: 'motherland';
+	src: local("motherland.ttf"),
+		url('motherland.ttf');
+}
+@font-face {
+	font-family: 'KyrillaSansSerif-Black';
+	src: local("KyrillaSansSerif-Black.ttf"),
+		url('KyrillaSansSerif-Black.ttf');
+}
+@mixin font($em){
+    font-size: ($em*16) + px;
+    font-size: ($em) + em;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+body {
+	background-color: $black;	
+}
+
+.page-wrapper {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1 {
+	color: $black;
+	font-family: 'motherland';
+	@include font(6);
+	line-height: 1.4em;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'KyrillaSansSerif-Black';
+	@include font(2);
+	color: $white;
+	line-height: 1.4em;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'KyrillaSansSerif-Black';
+	@include font(1.8);
+	color: $black;
+	line-height: 1.4em;
+	padding: 2%;
+	transform: rotate(-18deg);
+}
+
+p {
+	font-family: sans-serif;
+	@include font(1);
+	color: $black;
+	line-height: 1.4em;
+	padding: 2%;
+	width: 60%;
+	margin-left: 30%;
+}
+
+li {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: $black;
+	padding: 2%;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+	font-family: 'KyrillaSansSerif-Black';
+	text-decoration: none;
+	color: $black;
+		&:hover {
+			color: $white;
+		} 
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+
+header {	
+	background: url("lady-min.png");
+	background-size: contain;
+	height: 700px;
+	padding: 10px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+		h1 {
+			position: absolute;
+			top: 20vw;
+			font-size: 8vw;
+			right: 10vw;
+			transform: rotate(-18deg);
+		}
+		h2 {
+			position: absolute;
+			transform: rotate(-17deg);
+			font-size: 3vw;
+			top: 27vw;
+			right: 9vw;
+		}
+			
+}	
+
+/*
+  ========================================
+  Section
+  ========================================
+*/
+
+section {
+}
+
+.summary {
+	background-color: $white;
+	margin-top: -350px;
+	border-top: 5px solid $red;
+	border-bottom: 5px solid $red;
+	a:hover {
+			color: $green;
+	}
+	p {
+	}
+}
+
+.preamble {
+	background-color: $green;
+	padding-bottom: 30px;
+	padding-top: 50px;
+	border-top: 10px solid $black;
+	p {
+		margin-top: 5px;
+	}
+}
+
+.explanation {
+	background-color: $white;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	border-top: 10px solid $black;
+	p {
+		margin-top: 5px;
+	}
+}
+
+.participation {
+	background-color: $green;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	border-top: 10px solid $black;
+	p {
+		margin-top: 5px;
+	}
+}
+
+.benefits {
+	background-color: $white;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	border-top: 10px solid $black;
+	p {
+		margin-top: 5px;
+	}
+}
+
+.requirements {
+	background-color: $green;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	border-top: 10px solid $black;
+	p {
+		margin-top: 5px;
+	}
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+footer {
+	background-color: $black;
+	text-align: center;
+	padding: 3% 0 30px 0;
+	border-top: 10px solid $black;
+	a {
+		color: $white;
+		text-decoration: none;
+		margin: 0 10px;
+		font-family: 'KyrillaSansSerif-Black';
+		padding-bottom: 40px;
+		&:hover, &:active {
+			color: transparent;
+			background: url("fist-2.png");
+			background-size: 20px;
+			background-repeat: no-repeat;
+		} 
+	}
+}
+
+/*
+  ========================================
+  Aside
+  ========================================
+*/
+
+aside {
+	background-color: $white;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	ul {
+		margin-top: 15px;
+		width: 60%;
+		margin-left: 30%;
+	}
+	a {
+		&:hover {
+			color: $green;
+		}
+	}
+}
+
+// .design-archives {
+// 	background-color: $green;
+// }
+
+
+
+
+@import 'mid-media';
+@import 'max-media';
+
+
+
+
+
+
+
+

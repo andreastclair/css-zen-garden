@@ -1,0 +1,263 @@
+@media screen and (min-width: 1150px) {
+
+.slidein {
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -moz-animation-name: slidein;
+  -webkit-animation-name: slidein;
+  animation-name: slidein;
+  -moz-animation-iteration-count: 3;
+  -webkit-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-moz-keyframes slidein {
+  from {
+    margin-left:0%;
+    width:300%
+  }
+      
+  to {
+    margin-left:100%;
+    width:100%;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left:0%;
+    width:300%
+  }
+  
+  to {
+   margin-left:100%;
+   width:100%;
+ }
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+header {	
+	height: 800px;
+	margin-left: 35px;
+	h1 {
+		animation-duration: 1.5s;
+  		animation-name: slidein;
+  		@keyframes slidein {
+				from {
+					margin-left: 100%;
+					width: 300%; 
+				}
+				to {
+					margin-left: 0%;
+					width: 47.2%;
+				}
+			}
+	}
+	h2 {
+		animation-duration: 1s;
+  		animation-name: slidein-two;
+  		@keyframes slidein-two {
+				from {
+					margin-left: 100%;
+					width: 300%; 
+				}
+				to {
+					margin-left: 0%;
+					width: 39%;
+				}
+			}
+	}
+}				
+
+/*
+  ========================================
+  Section
+  ========================================
+*/
+
+section {
+	
+}
+
+.summary {
+	margin-top: -150px;
+	margin-left: -80px;
+	width: 115%;
+	@include font(1.5);
+}
+
+.preamble {
+	border-bottom: 5px solid $white;
+	h3 {
+		color: $white;
+		font-family: 'motherland';
+		position: relative;
+		top: -1vw;
+		left: -1vw;
+		@include font(4);
+	}
+	p {
+		padding-top: 0;
+		padding-bottom: 0;
+	}	
+}
+
+
+.explanation {
+	width: 70%;
+	float: left;
+	background-color: $white;
+	border-top: none;
+	h3 {
+		transform: rotate(0deg);
+	}
+	p {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	
+}
+
+.participation {
+	width: 70%;
+	float: left;
+	background-color: $green;
+	h3 {
+		transform: rotate(0deg);
+	}
+	p {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	
+}
+
+.benefits {
+	width: 70%;
+	float: left;
+	background-color: $white;
+	h3 {
+		transform: rotate(0deg);
+	}
+	p {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	
+}
+
+.requirements {
+	width: 70%;
+	float: left;
+	background-color: $green;
+	h3 {
+		transform: rotate(0deg);
+	}
+	p {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+footer {
+	background: url("diag-min.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	float: left;
+	padding: 3% 0 80px 50px;
+	a {
+		color: $black;
+		@include font(2);
+		margin: 0 30px;
+		padding-bottom: 70px;
+		&:hover, &:active {
+			background-size: 50px;
+		} 
+	}
+}
+
+/*
+  ========================================
+  Aside
+  ========================================
+*/
+
+aside {
+	width: 25%;
+	float: right;
+	background-color: $black;
+	margin-top: -120%;
+	h3 {
+		width: 35%;
+	}
+	ul, h3, a, li {
+		color: $white;
+		transform: rotate(0deg);
+		margin-top: 0;
+	}
+	a {
+		&:hover {
+			color: $green;
+		}
+	}
+}
+
+// aside {
+// 	background-color: $white;
+// 	background: url("fist-min.png");
+// 	background-size: contain;
+// 	width: 40%;
+// 	margin-top: -125.1%;
+// 	background-repeat: no-repeat;
+// 	float: right;
+// 	ul, h3 {
+// 		transform: rotate(0deg);
+// 		position: relative;
+// 		top: 610px;
+// 		width: 100%;
+// 		margin-left: 40%;
+// 		color: $white;
+// 		right: 30%;
+// 		margin-top: 0;
+// 		a, li {
+// 			color: $white;
+// 		}
+// 		a {
+// 			&:hover {
+// 				color: $green;
+// 			}
+// 		}
+// 	}
+// }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
