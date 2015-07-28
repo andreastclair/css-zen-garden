@@ -5,12 +5,12 @@ The Css Zen Garden is a challenge that has been around for a decade. (Happy birt
 For my Zen Garden, I designed around the style of Russian Constructivism. I used CSS Animations and pseudu classes to create a site based on the propoganda posters of the time period.  
 
 Toolkit:
-[] HTML
-[] CSS
-[] CSS Animations
-[] Psuedo classes
-[] Responsive web design
-[] Research
-[] Working with restrictions
+- HTML
+- CSS
+- CSS Animations
+- Psuedo classes
+- Responsive web design
+- Research
+- Working with restrictions
 
 
